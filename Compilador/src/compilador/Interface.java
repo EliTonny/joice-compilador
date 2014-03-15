@@ -11,15 +11,15 @@ public class Interface extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanelBotoes = new javax.swing.JPanel();
-        jToggleButton4 = new javax.swing.JToggleButton();
-        jToggleButton5 = new javax.swing.JToggleButton();
-        jToggleButton6 = new javax.swing.JToggleButton();
-        jToggleButton7 = new javax.swing.JToggleButton();
-        jToggleButton8 = new javax.swing.JToggleButton();
-        jToggleButton9 = new javax.swing.JToggleButton();
-        jToggleButton10 = new javax.swing.JToggleButton();
-        jToggleButton11 = new javax.swing.JToggleButton();
-        jToggleButton12 = new javax.swing.JToggleButton();
+        jToggleButtonNovo = new javax.swing.JToggleButton();
+        jToggleButtonAbrir = new javax.swing.JToggleButton();
+        jToggleButtonSalvar = new javax.swing.JToggleButton();
+        jToggleButtonCopiar = new javax.swing.JToggleButton();
+        jToggleButtonColar = new javax.swing.JToggleButton();
+        jToggleButtonRecortar = new javax.swing.JToggleButton();
+        jToggleButtonCompilar = new javax.swing.JToggleButton();
+        jToggleButtonGerarCodigo = new javax.swing.JToggleButton();
+        jToggleButtonEquipe = new javax.swing.JToggleButton();
         jPanelEntrada = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextAreaEntrada = new javax.swing.JTextArea();
@@ -31,73 +31,74 @@ public class Interface extends javax.swing.JFrame {
 
         jPanelBotoes.setLayout(new java.awt.GridLayout());
 
-        jToggleButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/File-add-icon.png"))); // NOI18N
-        jToggleButton4.setText("novo [ctrl+n]");
-        jToggleButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jToggleButton4.setMinimumSize(new java.awt.Dimension(0, 0));
-        jToggleButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jPanelBotoes.add(jToggleButton4);
+        jToggleButtonNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/File-add-icon.png"))); // NOI18N
+        jToggleButtonNovo.setText("novo [ctrl+n]");
+        jToggleButtonNovo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jToggleButtonNovo.setMinimumSize(new java.awt.Dimension(0, 0));
+        jToggleButtonNovo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jPanelBotoes.add(jToggleButtonNovo);
 
-        jToggleButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Folder-icon.png"))); // NOI18N
-        jToggleButton5.setText("abrir [ctrl+a]");
-        jToggleButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jToggleButton5.setMinimumSize(new java.awt.Dimension(0, 0));
-        jToggleButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jPanelBotoes.add(jToggleButton5);
+        jToggleButtonAbrir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Folder-icon.png"))); // NOI18N
+        jToggleButtonAbrir.setText("abrir [ctrl+a]");
+        jToggleButtonAbrir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jToggleButtonAbrir.setMinimumSize(new java.awt.Dimension(0, 0));
+        jToggleButtonAbrir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jPanelBotoes.add(jToggleButtonAbrir);
 
-        jToggleButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Save-icon.png"))); // NOI18N
-        jToggleButton6.setText("salvar [ctrl+s]");
-        jToggleButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jToggleButton6.setMinimumSize(new java.awt.Dimension(0, 0));
-        jToggleButton6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jPanelBotoes.add(jToggleButton6);
+        jToggleButtonSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Save-icon.png"))); // NOI18N
+        jToggleButtonSalvar.setText("salvar [ctrl+s]");
+        jToggleButtonSalvar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jToggleButtonSalvar.setMinimumSize(new java.awt.Dimension(0, 0));
+        jToggleButtonSalvar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jPanelBotoes.add(jToggleButtonSalvar);
 
-        jToggleButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Copy-icon.png"))); // NOI18N
-        jToggleButton7.setText("copiar [ctrl+c]");
-        jToggleButton7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jToggleButton7.setMinimumSize(new java.awt.Dimension(0, 0));
-        jToggleButton7.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jPanelBotoes.add(jToggleButton7);
+        jToggleButtonCopiar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Copy-icon.png"))); // NOI18N
+        jToggleButtonCopiar.setText("copiar [ctrl+c]");
+        jToggleButtonCopiar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jToggleButtonCopiar.setMinimumSize(new java.awt.Dimension(0, 0));
+        jToggleButtonCopiar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jPanelBotoes.add(jToggleButtonCopiar);
 
-        jToggleButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Paste-icon.png"))); // NOI18N
-        jToggleButton8.setText("colar [ctrl+v]");
-        jToggleButton8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jToggleButton8.setMinimumSize(new java.awt.Dimension(0, 0));
-        jToggleButton8.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jPanelBotoes.add(jToggleButton8);
+        jToggleButtonColar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Paste-icon.png"))); // NOI18N
+        jToggleButtonColar.setText("colar [ctrl+v]");
+        jToggleButtonColar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jToggleButtonColar.setMinimumSize(new java.awt.Dimension(0, 0));
+        jToggleButtonColar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jPanelBotoes.add(jToggleButtonColar);
 
-        jToggleButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Cut-icon.png"))); // NOI18N
-        jToggleButton9.setText("recortar [ctrl+x]");
-        jToggleButton9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jToggleButton9.setMinimumSize(new java.awt.Dimension(0, 0));
-        jToggleButton9.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jPanelBotoes.add(jToggleButton9);
+        jToggleButtonRecortar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Cut-icon.png"))); // NOI18N
+        jToggleButtonRecortar.setText("recortar [ctrl+x]");
+        jToggleButtonRecortar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jToggleButtonRecortar.setMinimumSize(new java.awt.Dimension(0, 0));
+        jToggleButtonRecortar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jPanelBotoes.add(jToggleButtonRecortar);
 
-        jToggleButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Actions-arrow-right-double-icon.png"))); // NOI18N
-        jToggleButton10.setText("compilar [F8]");
-        jToggleButton10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jToggleButton10.setMinimumSize(new java.awt.Dimension(0, 0));
-        jToggleButton10.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jPanelBotoes.add(jToggleButton10);
+        jToggleButtonCompilar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Actions-arrow-right-double-icon.png"))); // NOI18N
+        jToggleButtonCompilar.setText("compilar [F8]");
+        jToggleButtonCompilar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jToggleButtonCompilar.setMinimumSize(new java.awt.Dimension(0, 0));
+        jToggleButtonCompilar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jPanelBotoes.add(jToggleButtonCompilar);
 
-        jToggleButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Wheels-icon.png"))); // NOI18N
-        jToggleButton11.setText("gerar código [F9]");
-        jToggleButton11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jToggleButton11.setMinimumSize(new java.awt.Dimension(0, 0));
-        jToggleButton11.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jPanelBotoes.add(jToggleButton11);
+        jToggleButtonGerarCodigo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Wheels-icon.png"))); // NOI18N
+        jToggleButtonGerarCodigo.setText("gerar código [F9]");
+        jToggleButtonGerarCodigo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jToggleButtonGerarCodigo.setMinimumSize(new java.awt.Dimension(0, 0));
+        jToggleButtonGerarCodigo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jPanelBotoes.add(jToggleButtonGerarCodigo);
 
-        jToggleButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Users-icon.png"))); // NOI18N
-        jToggleButton12.setText("equipe [F1]");
-        jToggleButton12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jToggleButton12.setMinimumSize(new java.awt.Dimension(0, 0));
-        jToggleButton12.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jPanelBotoes.add(jToggleButton12);
+        jToggleButtonEquipe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Users-icon.png"))); // NOI18N
+        jToggleButtonEquipe.setText("equipe [F1]");
+        jToggleButtonEquipe.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jToggleButtonEquipe.setMinimumSize(new java.awt.Dimension(0, 0));
+        jToggleButtonEquipe.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jPanelBotoes.add(jToggleButtonEquipe);
 
         jPanelEntrada.setLayout(new java.awt.GridLayout());
 
         jTextAreaEntrada.setColumns(20);
         jTextAreaEntrada.setRows(5);
+        jTextAreaEntrada.setText("Soh tem q trocar esse cara por um componente com linhas\nacho q a Joice vai passar isso\n");
         jScrollPane1.setViewportView(jTextAreaEntrada);
 
         jPanelEntrada.add(jScrollPane1);
@@ -163,14 +164,14 @@ public class Interface extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextAreaEntrada;
     private javax.swing.JTextArea jTextAreaSaida;
-    private javax.swing.JToggleButton jToggleButton10;
-    private javax.swing.JToggleButton jToggleButton11;
-    private javax.swing.JToggleButton jToggleButton12;
-    private javax.swing.JToggleButton jToggleButton4;
-    private javax.swing.JToggleButton jToggleButton5;
-    private javax.swing.JToggleButton jToggleButton6;
-    private javax.swing.JToggleButton jToggleButton7;
-    private javax.swing.JToggleButton jToggleButton8;
-    private javax.swing.JToggleButton jToggleButton9;
+    private javax.swing.JToggleButton jToggleButtonAbrir;
+    private javax.swing.JToggleButton jToggleButtonColar;
+    private javax.swing.JToggleButton jToggleButtonCompilar;
+    private javax.swing.JToggleButton jToggleButtonCopiar;
+    private javax.swing.JToggleButton jToggleButtonEquipe;
+    private javax.swing.JToggleButton jToggleButtonGerarCodigo;
+    private javax.swing.JToggleButton jToggleButtonNovo;
+    private javax.swing.JToggleButton jToggleButtonRecortar;
+    private javax.swing.JToggleButton jToggleButtonSalvar;
     // End of variables declaration//GEN-END:variables
 }
